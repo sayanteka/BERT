@@ -7,6 +7,10 @@ In summary, pretraining involves training a model on a large dataset(wikipedia d
 # Pretraining BERT Model
 BERT is pretrained on two different tasks: NSP(Next seq prediction) and MLM(Masked Language Modelling).
 Dataset prep in NSP. My name is sayanteka. I am working as data scientist. 2nd sentence follows first sentence.
-Therefore, it is lablelled as yes. On the other hand, My name is sayanteka. Sun rises in east. 2nd sentence doesn't follow 1st sentence. It will be labelled as No.
+Therefore, it is  yes when it comes to isnext. On the other hand, My name is sayanteka. Sun rises in east. 2nd sentence doesn't follow 1st sentence. It will be  No when it comes to isnext.
 
 In NSP, Feed forward NN is applied on CLS Token.
+
+In MLM, random tokens get masked in input sentences. I am [masked] boy. She is at [masked]. I just texted her. Above masking done for 80% of total input seq. 10% below alterations were done. Replace any token with random token from vocab. He is car best friend. instead using word my, car is used. Car love each other. Instead using they  car is used and so on. Rem 10% no alterations. So, in total there are 3 cases in MLM. 
+
+Due to MLM, bert is different from transformer. Transformer predicts next word based on previous word. However bert can predict previous words i.e. word occuring before. So bert model can learn from both the directions.
