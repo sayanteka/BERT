@@ -8,3 +8,5 @@ In summary, pretraining involves training a model on a large dataset(wikipedia d
 BERT is pretrained on two different tasks: NSP(Next seq prediction) and MLM(Masked Language Modelling).
 Dataset prep in NSP. My name is sayanteka. I am working as data scientist. 2nd sentence follows first sentence.
 Therefore, it is lablelled as yes. On the other hand, My name is sayanteka. Sun rises in east. 2nd sentence doesn't follow 1st sentence. It will be labelled as No.
+
+In NSP, Feed forward NN is applied on CLS Token.
