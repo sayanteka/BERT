@@ -17,4 +17,4 @@ In MLM, Feed forward NN applied on Masked Token.
 
 In MLM, random tokens get masked in input sentences. I am [masked] boy. She is at [masked]. I just texted her. Above masking done for 80% of total input seq. 10% below alterations were done. Replace any token with random token from vocab. He is car best friend. instead using word my, car is used. Car love each other. Instead using they  car is used and so on. Rem 10% no alterations. So, in total there are 3 cases in MLM. 
 
-Due to MLM, bert is different from transformer. Transformer predicts next word based on previous word. However bert can predict previous words i.e. word occuring before. So bert model can learn from both the directions.
+
